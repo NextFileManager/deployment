@@ -5,26 +5,19 @@
 https://github.com/user-attachments/assets/a4b80ea1-6757-45da-b6ed-2aa7bb7c4981
 
 ## ✨ Get Started: 
-1. **Clone the repo** ```git clone https://github.com/aaw3/NextFileManager```
-2. **Start the backend** (should be in the root directory)
+1. **Clone the repo (make sure to use --recurse-submodules)**
 
-   ```pip install -r requirements```
+   ```git clone --recurse-submodules https://github.com/NextFileManager/deployment.git```
 
-   ```fastapi dev app.py```
+2. **Start the docker**
 
-3. **Start the frontend**
-   
-   ```cd frontend```
+   ```docker compose up -d --build```
 
-   ```npm install```
-
-   ```npm run dev```
-
-5. **Add local files**
+3. **Add local files**
   
    Navigate back to the root directory and create an upload folder
 
-   Add files or use ```touch file1.txt file2.txt file3.txt file4.txt``` to generate some empty ones
+   Add files (or use ```touch file1.txt file2.txt file3.txt file4.txt``` to generate some empty ones)
 
 ## 📂 What is NextFileManager?
 
