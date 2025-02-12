@@ -7,7 +7,7 @@ services:
       - "5173:5173"
     volumes:
       - ./frontend:/app
-      - /app/node_modules
+      - nfm_node_modules:/app/node_modules
     environment:
       - NODE_ENV=development
     command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
@@ -37,3 +37,6 @@ services:
       - frontend
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+
+volumes:
+  nfm_node_modules:
